@@ -12,16 +12,15 @@ int main ()
     }
     for(i=0;i<3;i++)
     {
-        for(j=3;j<n;j++)
+        for(j=0;j<3;j++)
         {
 
             m=n[i][j]+n[i][j];
             a=n[i][j]+n[i][j];
         }
     }
-    printf("%d %d",m,a);
 
-    /*if(m==a)
+    if(m==a)
     {
         printf("YES");
     } else
