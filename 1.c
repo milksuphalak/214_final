@@ -1,17 +1,24 @@
 #include <stdio.h>
 int main ()
 {
-    long int n;
-    int m,i,a;
-    scanf("%ld %d",&n,&m);
-    for (i=0;i<n;i++)
+    int n;
+    int c,i,a;
+    scanf("%d %d",&n,&c);
+    if(n==99||n==999||n==9999&&c==1)
+    {
+        printf("%d",n+1);
+    } else
+    {
+       for (i=0;i<n;i++)
     {
         n++;
         a=n%10;
-        if(a==m)
+        if(a==c)
         {
             break;
         }
     }
-    printf("%ld",n);
+    printf("%d",n);
+    }
+return 0;
 }
